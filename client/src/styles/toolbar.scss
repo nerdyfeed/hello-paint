@@ -1,0 +1,73 @@
+@import "./variables.scss";
+
+.toolbar {
+    height: $toolbar-height;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 5px gray;
+    z-index: 999;
+    padding: 0 16px;
+
+    &__btn {
+        background-color: transparent;
+        height: 25px;
+        width: 25px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+
+    .brush {
+        background-image: url('../assets/img/brush.svg');
+    }
+
+    .rectangle {
+        background-image: url('../assets/img/rectangle.svg');
+    }
+
+    .circle {
+        background-image: url('../assets/img/circle.svg');
+    }
+
+    .eraser {
+        background-image: url('../assets/img/eraser.svg');
+    }
+
+    .line {
+        background-image: url('../assets/img/line.svg');
+    }
+
+    .undo {
+        background-image: url('../assets/img/undo.svg');
+    }
+
+    .redo {
+        background-image: url('../assets/img/redo.svg');
+    }
+
+    .save {
+        background-image: url('../assets/img/save.svg');
+    }
+}
+
+.setting-bar {
+    height: $toolbar-height;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 5px gray;
+    top: $toolbar-height;
+}
